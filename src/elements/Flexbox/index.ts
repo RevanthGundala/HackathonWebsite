@@ -37,7 +37,7 @@ export const Flexbox = styled.div<FlexBoxTypes>`
   align-items: ${({alignStart}) => alignStart && 'flex-start'};
   align-items: ${({alignCenter}) => alignCenter && 'center'};
   align-items: ${({alignEnd}) => alignEnd && 'flex-end'};
-  ${desktop} {
+  ${desktop} {fatal: unable to access 'https://github.com/Abusayid693/Type-writer.git/': The requested URL returned error: 403
     flex-direction: ${({flexRowLg}) => flexRowLg && 'row'};
     flex-direction: ${({flexColLg}) => flexColLg && 'column'};
   }
