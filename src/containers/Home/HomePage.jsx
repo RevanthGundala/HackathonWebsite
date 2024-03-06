@@ -1,27 +1,27 @@
-import {UseMedia} from 'hooks/useMedia';
-import React, {useState} from 'react';
-import Col from 'react-bootstrap/Col';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Birds from '../../components/Birds';
-import {Accordion} from '../../components/FAQ/faq.jsx';
-import Footer from '../../components/Footer/footer.jsx';
+import { UseMedia } from "hooks/useMedia";
+import React, { useState } from "react";
+import Col from "react-bootstrap/Col";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Birds from "../../components/Birds";
+import { Accordion } from "../../components/FAQ/faq.jsx";
+import Footer from "../../components/Footer/footer.jsx";
 import {
   Logo,
-  LogoSectionAbout
-} from '../../components/logo-section/logoSection.jsx';
-import Media from '../../components/media/media.jsx';
+  LogoSectionAbout,
+} from "../../components/logo-section/logoSection.jsx";
+import Media from "../../components/media/media.jsx";
 import {
   FirstPrize,
-  PrizeHeading
-} from '../../components/prize tracks/prizes.jsx';
+  PrizeHeading,
+} from "../../components/prize tracks/prizes.jsx";
 import {
   Sponsor,
   SponsorsHead,
-  SponsorUS
-} from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/team/team';
-import {Myinfo} from '../../components/Top-division-components/Top-division-components.jsx';
+  SponsorUS,
+} from "../../components/Sponsors/sponsors.jsx";
+import { JoinTeam, Member } from "../../components/team/team";
+import { Myinfo } from "../../components/Top-division-components/Top-division-components.jsx";
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -30,19 +30,19 @@ import {
   Awardinfo,
   sponsorLogos,
   /*TeamInfo*/
-  TOP_SECTION
-} from '../../Module/General';
-import MyCalender from '../calender';
-import './about.css';
-import pattern from './pattern4.png';
+  TOP_SECTION,
+} from "../../Module/General";
+import MyCalender from "../calender";
+import "./about.css";
+import pattern from "./pattern4.png";
 
 function SponsorGroup(props) {
   return (
     <Row>
-      {props.map(s => (
+      {props.map((s) => (
         <Col className="" sm={12} lg={4} md={6}>
-          {' '}
-          <Sponsor srcx={s.src} />{' '}
+          {" "}
+          <Sponsor srcx={s.src} />{" "}
         </Col>
       ))}
     </Row>
@@ -56,7 +56,7 @@ function SponsorGroup(props) {
 function AwardGroup(props) {
   return (
     <Row>
-      {props.map(s => (
+      {props.map((s) => (
         <Col className="" sm={12} lg={4} md={6}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
@@ -68,7 +68,7 @@ function AwardGroup(props) {
 function PrizeGroup(props) {
   return (
     <Row>
-      {props.map(s => (
+      {props.map((s) => (
         <Col className="" sm={12} lg={4} md={6}>
           <FirstPrize icon={s.icon} type={s.type} content={s.content} />
         </Col>
@@ -81,7 +81,7 @@ function PrizeGroup(props) {
 function TeamMembers(props) {
   return (
     <Row className="members">
-      {props.map(s => (
+      {props.map((s) => (
         <Col className="" sm={12} lg={4} md={4}>
           <Member info={s} />
         </Col>
@@ -93,7 +93,7 @@ function TeamMembers(props) {
 function FrequentlyAsked(props) {
   return (
     <Row className="sf">
-      {props.map(s => (
+      {props.map((s) => (
         <Col className="" sm={12} lg={6} md={6}>
           <Accordion panels={s} />
         </Col>
@@ -102,12 +102,17 @@ function FrequentlyAsked(props) {
   );
 }
 
+function handleClick(e) {
+  e.preventDefault();
+  window.location.href = "https://sui.io/";
+}
+
 export default function HomePage() {
   const [media, setMedia] = useState();
-  UseMedia('min-width', 1000, setMedia);
+  UseMedia("min-width", 1000, setMedia);
 
   return (
-    <div className="Whole_div" style={{backgroundImage: `url(${pattern})`}}>
+    <div className="Whole_div" style={{ backgroundImage: `url(${pattern})` }}>
       <div className="color_sectiom" id="home">
         <Container fluid>
           <Row className="Row info">
@@ -160,12 +165,16 @@ export default function HomePage() {
         </div>
 
         {/* ********Sponsors here ***** */}
-
-        <Row className="sponsorSection" id="sponsors">
-          <SponsorsHead />
-          <SponsorUS />
-          {sponsorLogos.map(SponsorGroup)}
-        </Row>
+        <div>
+          <Row className="sponsorSection" id="sponsors">
+            <SponsorsHead />
+            {/* <SponsorUS /> */}
+            {/* {sponsorLogos.map(SponsorGroup)} */}
+            <div className="Sponsor " onClick={handleClick}>
+              <img src={sponsorLogos[0]} alt="Sui Foundation" />
+            </div>
+          </Row>
+        </div>
         {/* ********Sponsors ending here ***** */}
 
         {media && <Birds top="120vh" left="0vh" type="" />}
@@ -185,13 +194,13 @@ export default function HomePage() {
         {/* ********Judges here ***** */}
 
         <h1 id="team">Judges</h1>
-        {FOOTER.JOIN_TEAM.required && (
+        {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
             formLink={TOP_SECTION.JUDGES_FORM_LINK}
             content="Interested in being judge"
           />
-        )}
+        )} */}
         {JudgesInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
       </Container>

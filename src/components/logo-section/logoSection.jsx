@@ -1,13 +1,13 @@
-import React from 'react';
-import './logoSection.css';
+import React from "react";
+import "./logoSection.css";
 
-import {MIDDLE_SECTION} from '../../Module/General';
+import { MIDDLE_SECTION } from "../../Module/General";
 
 function LogoSectionAbout() {
   return (
     <div className="LogoSectionAbout">
       <h1>{MIDDLE_SECTION.TITLE}</h1>
-      <p>{MIDDLE_SECTION.LONG_DESCRIPTION}</p>
+      <p>{MIDDLE_SECTION.LONG_DESCRIPTION} </p>
     </div>
   );
 }
@@ -20,4 +20,4 @@ function Logo() {
   );
 }
 
-export {Logo, LogoSectionAbout};
+export { Logo, LogoSectionAbout };

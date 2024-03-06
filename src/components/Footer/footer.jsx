@@ -1,30 +1,30 @@
-import React, {useEffect, useState} from 'react';
-import './footer.scss';
-import Insta from './icons8-instagram.svg';
-import Dis from './icons8-discord.svg';
-import Linked from './icons8-linkedin-2.svg';
-import Mail from './icons8-mail.svg';
-import DevPost from './icons8-dev-post.svg';
-import PrivacyPolicy from './Privacy policy.pdf';
-import TermsOfUse from './Terms of use.pdf';
-import Twitter from './icons8-twitter.svg';
-import {Btn} from '../Top-division-components/Top-division-components.jsx';
-import cross from './cross.svg';
-import {SOCIALS, TOP_SECTION, FOOTER} from '../../Module/General';
+import React, { useEffect, useState } from "react";
+import "./footer.scss";
+import Insta from "./icons8-instagram.svg";
+import Dis from "./icons8-discord.svg";
+import Linked from "./icons8-linkedin-2.svg";
+import Mail from "./icons8-mail.svg";
+import DevPost from "./icons8-dev-post.svg";
+import PrivacyPolicy from "./Privacy policy.pdf";
+import TermsOfUse from "./Terms of use.pdf";
+import Twitter from "./icons8-twitter.svg";
+import { Btn } from "../Top-division-components/Top-division-components.jsx";
+import cross from "./cross.svg";
+import { SOCIALS, TOP_SECTION, FOOTER } from "../../Module/General";
 
 export default function Footer() {
   const [template, setTemplate] = useState(false);
   const [viewTemplate, setViewTemplate] = useState(true);
 
   useEffect(() => {
-    window.addEventListener('scroll', listenScrollEvent);
+    window.addEventListener("scroll", listenScrollEvent);
 
     return () => {
-      window.removeEventListener('scroll', listenScrollEvent);
+      window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
 
-  const listenScrollEvent = e => {
+  const listenScrollEvent = (e) => {
     if (window.scrollY > 2800) setTemplate(true);
     else if (window.scrollY < 2800) setTemplate(false);
   };
@@ -76,10 +76,10 @@ export default function Footer() {
         </div>
         <div className="footer_info">
           <p>
-            Contact us{' '}
+            Contact us{" "}
             <a href={SOCIALS.email}>
-              <em>{SOCIALS.mail}</em>
-            </a>{' '}
+              <em>{SOCIALS.email}</em>
+            </a>{" "}
           </p>
 
           {FOOTER.Privacy_policy.required && (

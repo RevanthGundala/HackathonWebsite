@@ -1,5 +1,5 @@
-import React from 'react';
-import './prizes.scss';
+import React from "react";
+import "./prizes.scss";
 
 function PrizeHeading(props) {
   return (
@@ -19,4 +19,4 @@ function FirstPrize(props) {
   );
 }
 
-export {FirstPrize, PrizeHeading};
+export { FirstPrize, PrizeHeading };

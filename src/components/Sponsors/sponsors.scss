@@ -1,6 +1,7 @@
 .Sponsor{
   margin-bottom: 5rem;
   transition: 0.3s;
+  cursor: pointer;
 }
 .Sponsor:hover{
   transform: scale(1.1);
@@ -9,6 +10,7 @@
     width: 25rem;
     display: inline-block;
     margin: 0;
+
 }
 
 .shead{
@@ -32,7 +34,7 @@
 }
 }
   .Sponsor img{
- 
+
    -webkit-animation: mover 1s infinite  alternate;
    animation: mover 1s infinite  alternate;
   }

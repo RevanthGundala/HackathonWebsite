@@ -1,6 +1,6 @@
-import React from 'react';
-import {Btn} from '../Top-division-components/Top-division-components.jsx';
-import './team.css';
+import React from "react";
+import { Btn } from "../Top-division-components/Top-division-components.jsx";
+import "./team.css";
 
 interface IJoinTeam {
   placeholder: string;
@@ -8,7 +8,7 @@ interface IJoinTeam {
   content: string;
 }
 
-const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
+const JoinTeam: React.FC<IJoinTeam> = ({ placeholder, formLink, content }) => {
   return (
     <div className="joinT">
       <h3>{content} </h3>
@@ -19,8 +19,8 @@ const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
   );
 };
 
-function Member({info}: {info: any}) {
-  const {github, role, name, img, linkedin} = info;
+function Member({ info }: { info: any }) {
+  const { github, role, name, img, linkedin } = info;
   return (
     <div className="member">
       <img src={img} alt="Limbo hack"></img>
@@ -38,4 +38,4 @@ function Member({info}: {info: any}) {
   );
 }
 
-export {Member, JoinTeam};
+export { Member, JoinTeam };
