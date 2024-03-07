@@ -15,6 +15,7 @@ import hackathonLogo from "./Assets/hackathonLogo.png";
 import boy from "./Assets/boy.png";
 import foundation from "./Assets/sponsorsLogos/Sui-Foundation.png";
 import sui from "./Assets/sponsorsLogos/sui-logo.png";
+import boscovic from "./Assets/sponsorsLogos/boscovic.jpeg";
 import pass from "./Assets/sponsorsLogos/1pass.png";
 import ACF from "./Assets/sponsorsLogos/ACF.png";
 import cfc from "./Assets/sponsorsLogos/cfc.png";
@@ -60,7 +61,8 @@ const SOCIALS = {
   discord: "https://discord.gg/7RqH3kKF",
   linkedin: "https://www.linkedin.com/company/blockchain-at-asu/",
   twitter: "https://twitter.com/blockchainASU",
-  devpost: "",
+  devpost:
+    "https://devpost.com/blockchainatasu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav",
   email: "blockchainatasu@gmail.com",
 };
 
@@ -141,23 +143,18 @@ const schedule = [
     day: "31-3-2024",
     events: [
       {
-        title: "Projects Due",
-        timings: "11 Am",
-        link: "https://google.com",
-      },
-      {
-        title: "Closing Ceremony",
+        title: "Lunch",
         timings: "12 Pm",
         link: "https://google.com",
       },
-    ],
-  },
-  {
-    day: "5-4-2024",
-    events: [
       {
-        title: "Bounties due",
-        timings: "6 Pm",
+        title: "Hacking Ends",
+        timings: "2 Pm",
+        link: "https://google.com",
+      },
+      {
+        title: "Winners Announced",
+        timings: "3 Pm",
         link: "https://google.com",
       },
     ],
@@ -179,18 +176,33 @@ const schedule = [
 const Awardinfo = [
   [
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: "Gold",
+      icon: (
+        <i
+          className="first fas fa-4x fa-medal"
+          style={{ color: "#FFD43B" }}
+        ></i>
+      ),
+      type: "Gold ($1500)",
       content: "The best project of the hackathon",
     },
     {
-      icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: "Silver",
+      icon: (
+        <i
+          className="first fas fa-4x fa-medal"
+          style={{ color: "#b9b4a7" }}
+        ></i>
+      ),
+      type: "Silver ($1250)",
       content: "The second best project of the hackathon",
     },
     {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: "Bronze",
+      icon: (
+        <i
+          className="first fas fa-4x fa-medal"
+          style={{ color: "#bb922a" }}
+        ></i>
+      ),
+      type: "Bronze ($1000)",
       content: "The third best project of the hackathon",
     },
   ],
@@ -200,54 +212,86 @@ const Prizeinfo = [
   [
     //Array 1
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: "Build best defi protocol",
-      content:
-        "First Overall prize will be given to a project that outstands all other submissions",
+      icon: (
+        <i
+          className="first fas fa-4x fa-chart-line"
+          style={{ color: "#63E6BE" }}
+        ></i>
+      ),
+      type: "Best DeFi protocol ($150)",
+      content: "The best DeFi protocol will win this category",
     },
     {
-      icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: "Build best nft project",
-      content:
-        "Second Overall prize will be given to the second best project of the hackathon",
+      icon: <i className="first fas fa-4x fa-network-wired"></i>,
+      type: "Best Infra project ($150)",
+      content: "The best infrastructure project will win this category",
     },
     {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: "Build best blockchain game",
-      content:
-        "Best third overall project of the hackathon will win some awesome prizes",
+      icon: (
+        <i
+          className="first fas fa-4x fa-gamepad"
+          style={{ color: "#74C0FC" }}
+        ></i>
+      ),
+      type: "Best Gaming project ($150)",
+      content: "The best gaming project will win this category",
     },
   ],
   [
     //Array 2
     {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: "Best Solo",
-      content:
-        "You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team",
+      icon: (
+        <i
+          className="fas fa-4x eighth fa-robot"
+          style={{ color: "#ba380d" }}
+        ></i>
+      ),
+      type: "Best use of AI ($150)",
+      content: "The best use of AI will win this category",
     },
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: " Best Beginner",
-      content: "Your project will qualify for this category if atleast 50% ",
+      icon: (
+        <i
+          className="first fas fa-4x fa-mobile"
+          style={{ color: "#000000" }}
+        ></i>
+      ),
+      type: "Best Mobile App ($150)",
+      content: "The best mobile app will win this category",
     },
     {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: "Best UI/UX",
-      content: "Project with most creative designs will be UI/UX track",
+      icon: (
+        <i
+          className="first fas fa-4x fa-book-open"
+          style={{ color: "#d4d72d" }}
+        ></i>
+      ),
+      type: "Best UI/UX ($150)",
+      content: "The best UI/UX will win this category",
     },
   ],
   [
     //Array 3
     {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: "Best Web App with Qoom",
-      content: "Must use qoom in your project to win this category",
+      icon: (
+        <i className="first fas fa-4x fa-star" style={{ color: "#273959" }}></i>
+      ),
+      type: "Judges Favorite ($100)",
+      content: "Favorite project of one judge will win this category",
     },
     {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
-      type: "More prizes",
-      content: "More prizes will be revealed later",
+      icon: (
+        <i className="first fas fa-4x fa-star" style={{ color: "#273959" }}></i>
+      ),
+      type: "Judges Favorite ($100)",
+      content: "Favorite project of one judge will win this category",
+    },
+    {
+      icon: (
+        <i className="first fas fa-4x fa-star" style={{ color: "#273959" }}></i>
+      ),
+      type: "Judges Favorite ($100)",
+      content: "Favorite project of one judge will win this category",
     },
   ],
 ];
@@ -307,11 +351,11 @@ const JudgesInfo = [
   [
     //Array 1
     {
-      Name: "Rehan",
-      role: "Organizer",
+      Name: "hey",
+      role: "Dragan Boscovic",
       github: "",
-      linkedin: "",
-      img: me,
+      linkedin: "https://www.linkedin.com/in/draganboscovic/",
+      img: boscovic,
     },
     {
       Name: "Moon",
@@ -328,23 +372,23 @@ const JudgesInfo = [
       img: Ryah,
     },
   ],
-  [
-    //Array 2
-    {
-      Name: "Lyanola",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: lyin,
-    },
-    {
-      Name: "Zoheb",
-      role: "Organizer",
-      github: "",
-      linkedin: "",
-      img: zoha,
-    },
-  ],
+  // [
+  //   //Array 2
+  //   {
+  //     Name: "Lyanola",
+  //     role: "Organizer",
+  //     github: "",
+  //     linkedin: "",
+  //     img: lyin,
+  //   },
+  //   {
+  //     Name: "Zoheb",
+  //     role: "Organizer",
+  //     github: "",
+  //     linkedin: "",
+  //     img: zoha,
+  //   },
+  // ],
 ];
 
 /** Instructions
