@@ -16,6 +16,8 @@ import boy from "./Assets/boy.png";
 import foundation from "./Assets/sponsorsLogos/Sui-Foundation.png";
 import sui from "./Assets/sponsorsLogos/sui-logo.png";
 import boscovic from "./Assets/sponsorsLogos/boscovic.jpeg";
+import puna from "./Assets/sponsorsLogos/puna.png";
+import black from "./Assets/sponsorsLogos/black.jpeg";
 import pass from "./Assets/sponsorsLogos/1pass.png";
 import ACF from "./Assets/sponsorsLogos/ACF.png";
 import cfc from "./Assets/sponsorsLogos/cfc.png";
@@ -53,7 +55,7 @@ const TOP_SECTION = {
   JUDGES_FORM_LINK:
     "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
   HACKERS_REGISTRATION_FORM_LINK:
-    "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u",
+    "https://asu-x-sui-hackathon.devpost.com/?ref_feature=challenge&ref_medium=discover",
 };
 
 const SOCIALS = {
@@ -351,25 +353,25 @@ const JudgesInfo = [
   [
     //Array 1
     {
-      Name: "hey",
+      Name: "Dragan Boscovic",
       role: "Dragan Boscovic",
       github: "",
       linkedin: "https://www.linkedin.com/in/draganboscovic/",
       img: boscovic,
     },
     {
-      Name: "Moon",
-      role: "Organizer",
+      Name: "Swathi Punathumkandi",
+      role: "Swathi Punathumkandi",
       github: "",
       linkedin: "",
-      img: moon,
+      img: puna,
     },
     {
       Name: "Ryah Garcia",
-      role: "Organizer",
+      role: "Coming Soon",
       github: "",
       linkedin: "",
-      img: Ryah,
+      img: black,
     },
   ],
   // [
@@ -445,7 +447,8 @@ const frequentlyAskedQuestions = [
       },
       {
         label: "Where is the hackathon taking place?",
-        content: "The Memorial Union at the ASU Tempe Campus",
+        content:
+          "Brickyard Engineering at the ASU Tempe Campus (Rooms announced soon)",
       },
       {
         label: "Will there be food?",
