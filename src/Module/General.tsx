@@ -367,7 +367,7 @@ const JudgesInfo = [
       img: puna,
     },
     {
-      Name: "Ryah Garcia",
+      Name: "Coming Soon",
       role: "Coming Soon",
       github: "",
       linkedin: "",
