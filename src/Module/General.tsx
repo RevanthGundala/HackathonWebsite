@@ -46,7 +46,7 @@ import zoha from "./Assets/teami/zoha.png";
 const name = "ASU x SUI Hackathon";
 
 const TOP_SECTION = {
-  TITLE: "test",
+  TITLE: name,
   Typed_effect: ["3 days", "$5000+ in prizes"],
   SHORT_DESCRIPTION:
     "Join us on March 29th for 3 days of creation, innovation, & fun.",
