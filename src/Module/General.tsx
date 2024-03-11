@@ -50,7 +50,7 @@ const TOP_SECTION = {
   Typed_effect: ["3 days", "$5000+ in prizes"],
   SHORT_DESCRIPTION:
     "Join us on March 29th for 3 days of creation, innovation, & fun.",
-  IMG_SRC: boy,
+  IMG_SRC: sui,
   DISCORD_LINK: "https://discord.gg/7RqH3kKF",
   JUDGES_FORM_LINK:
     "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
