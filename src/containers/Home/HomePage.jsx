@@ -42,7 +42,7 @@ function SponsorGroup(props) {
       {props.map((s) => (
         <Col className="" sm={12} lg={4} md={6}>
           {" "}
-          <Sponsor srcx={s.src} />{" "}
+          <Sponsor srcx={s.src} link={s.link} />
         </Col>
       ))}
     </Row>
@@ -100,11 +100,6 @@ function FrequentlyAsked(props) {
       ))}
     </Row>
   );
-}
-
-function handleClick(e) {
-  e.preventDefault();
-  window.location.href = "https://sui.io/";
 }
 
 export default function HomePage() {
@@ -169,10 +164,10 @@ export default function HomePage() {
           <Row className="sponsorSection" id="sponsors">
             <SponsorsHead />
             {/* <SponsorUS /> */}
-            {/* {sponsorLogos.map(SponsorGroup)} */}
-            <div className="Sponsor " onClick={handleClick}>
+            {sponsorLogos.map(SponsorGroup)}
+            {/* <div className="Sponsor " onClick={handleClick}>
               <img src={sponsorLogos[0]} alt="Sui Foundation" />
-            </div>
+            </div> */}
           </Row>
         </div>
         {/* ********Sponsors ending here ***** */}

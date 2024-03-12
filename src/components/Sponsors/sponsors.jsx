@@ -7,9 +7,16 @@ function SponsorsHead() {
   return <h1 className="shead">Sponsors & Partners</h1>;
 }
 
+function handleClick(link) {
+  window.location.href = link;
+}
+
 function Sponsor(props) {
   return (
-    <div className="Sponsor ">
+    <div
+      className="Sponsor "
+      onClick={() => (window.location.href = props.link)}
+    >
       <img src={props.srcx} alt="Limbo hacks"></img>
     </div>
   );

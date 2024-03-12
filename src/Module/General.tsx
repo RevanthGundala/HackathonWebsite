@@ -15,6 +15,9 @@ import hackathonLogo from "./Assets/hackathonLogo.png";
 import boy from "./Assets/boy.png";
 import foundation from "./Assets/sponsorsLogos/Sui-Foundation.png";
 import sui from "./Assets/sponsorsLogos/sui-logo.png";
+import research from "./Assets/sponsorsLogos/research.png";
+import center from "./Assets/sponsorsLogos/center.png";
+import asu from "./Assets/sponsorsLogos/asu.png";
 import boscovic from "./Assets/sponsorsLogos/boscovic.jpeg";
 import puna from "./Assets/sponsorsLogos/puna.png";
 import black from "./Assets/sponsorsLogos/black.jpeg";
@@ -399,14 +402,18 @@ const JudgesInfo = [
  * in a group of 3.
  */
 
-const sponsorLogos = [foundation];
+// const sponsorLogos = [foundation, asu, asu];
 
-// const sponsorLogos = [
-//   [{ src: cfc }, { src: sublime }, { src: echoAR }], //Array 1
-//   [{ src: taskade }, { src: Replit }, { src: qoom }], //Array 2
-//   [{ src: interviewC }, { src: pass }, { src: glimpse }], //Array 3
-//   [{ src: egg }, { src: ll }, { src: ACF }], //Array 4
-// ];
+const sponsorLogos = [
+  [
+    { src: foundation, link: "https://sui.io/" },
+    { src: research, link: "https://blockchain.asu.edu/" },
+    { src: center, link: "https://aida.wpcarey.asu.edu/" },
+  ], //Array 1
+  //   [{ src: taskade }, { src: Replit }, { src: qoom }], //Array 2
+  //   [{ src: interviewC }, { src: pass }, { src: glimpse }], //Array 3
+  //   [{ src: egg }, { src: ll }, { src: ACF }], //Array 4
+];
 
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
