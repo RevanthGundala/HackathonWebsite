@@ -363,7 +363,7 @@ const JudgesInfo = [
       Name: "Swathi Punathumkandi",
       role: "Swathi Punathumkandi",
       github: "",
-      linkedin: "",
+      linkedin: "https://www.linkedin.com/in/dr-swathi-p-37346a128/",
       img: puna,
     },
     {
