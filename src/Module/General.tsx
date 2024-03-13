@@ -54,7 +54,7 @@ const TOP_SECTION = {
   SHORT_DESCRIPTION:
     "Join us on March 29th for 3 days of creation, innovation, & fun.",
   IMG_SRC: sui,
-  DISCORD_LINK: "https://discord.gg/7RqH3kKF",
+  DISCORD_LINK: "https://discord.gg/57KbEHUXAS",
   JUDGES_FORM_LINK:
     "https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u",
   HACKERS_REGISTRATION_FORM_LINK:
@@ -63,7 +63,7 @@ const TOP_SECTION = {
 
 const SOCIALS = {
   instagram: "https://www.instagram.com/blockchain.at.asu/",
-  discord: "https://discord.gg/7RqH3kKF",
+  discord: "https://discord.gg/57KbEHUXAS",
   linkedin: "https://www.linkedin.com/company/blockchain-at-asu/",
   twitter: "https://twitter.com/blockchainASU",
   devpost:
