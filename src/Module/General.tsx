@@ -468,7 +468,8 @@ const frequentlyAskedQuestions = [
       },
       {
         label: "I have more questions?",
-        content: "Make sure to join our Discord if you have more questions!",
+        content:
+          "Join this Telegram Group Chat and Ask Away! https://t.me/c/2055820135/1",
       },
     ],
   ],
