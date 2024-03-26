@@ -454,8 +454,7 @@ const frequentlyAskedQuestions = [
       },
       {
         label: "Where is the hackathon taking place?",
-        content:
-          "Brickyard Engineering at the ASU Tempe Campus (Rooms announced soon)",
+        content: "Brickyard Artisan Court (BYAC 110)",
       },
       {
         label: "Will there be food?",
